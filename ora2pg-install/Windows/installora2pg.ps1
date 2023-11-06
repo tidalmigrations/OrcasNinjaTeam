@@ -578,7 +578,7 @@ Function Install-Perl {
     }
 
     # url link where the perl installation file can be downloaded    
-    $urlDownload = "http://strawberryperl.com/download/$version/strawberry-perl-$version-{0}bit.msi" -f $architecture
+    $urlDownload = "https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_5380_5361/strawberry-perl-$version-{0}bit.msi" -f $architecture
     
     # download the installer
     $packageDownloadPath = Download-Package -packageName "strawberry-perl.msi" `
